@@ -1,0 +1,56 @@
+{
+  "Tomato___Late_blight": {
+    "en": {
+      "name": "Late Blight",
+      "description": "Dark spots on leaves that spread fast in cool, wet weather. Treat quickly to save the crop."
+    },
+    "hi": {
+      "name": "पछेती झुलसा",
+      "description": "पत्तियों पर काले धब्बे, ठंड और नमी में तेज़ी से फैलते हैं। जल्दी इलाज करें।"
+    },
+    "kn": {
+      "name": "ತಡವಾದ ಅಂಗಮಾರಿ ರೋಗ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಕಪ್ಪು ಚುಕ್ಕೆಗಳು, ತಂಪಾದ ಮತ್ತು ತೇವಾಂಶವುಳ್ಳ ವಾತಾವರಣದಲ್ಲಿ ವೇಗವಾಗಿ ಹರಡುತ್ತದೆ. ಬೇಗ ಚಿಕಿತ್ಸೆ ನೀಡಿ."
+    },
+    "te": {
+      "name": "ఆలస్య తెగులు",
+      "description": "ఆకులపై నల్లని మచ్చలు, చల్లని, తేమతో కూడిన వాతావరణంలో వేగంగా వ్యాపిస్తుంది. వెంటనే చికిత్స చేయండి."
+    }
+  },
+  "Tomato___Early_blight": {
+    "en": {
+      "name": "Early Blight",
+      "description": "Brown spots with rings, like a target, on older leaves. Less severe than late blight but still reduces yield."
+    },
+    "hi": {
+      "name": "अगेती झुलसा",
+      "description": "पुरानी पत्तियों पर भूरे, गोल छल्लेदार धब्बे। पछेती झुलसा से कम खतरनाक, पर उपज घटाता है।"
+    },
+    "kn": {
+      "name": "ಆರಂಭಿಕ ಅಂಗಮಾರಿ ರೋಗ",
+      "description": "ಹಳೆಯ ಎಲೆಗಳ ಮೇಲೆ ಕಂದು ಬಣ್ಣದ ವರ್ತುಲಾಕಾರದ ಚುಕ್ಕೆಗಳು. ತಡವಾದ ಅಂಗಮಾರಿಗಿಂತ ಕಡಿಮೆ ಅಪಾಯಕಾರಿ, ಆದರೆ ಇಳುವರಿ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ."
+    },
+    "te": {
+      "name": "తొలి తెగులు",
+      "description": "పాత ఆకులపై గోధుమ రంగు వలయాకార మచ్చలు. ఆలస్య తెగులు కంటే తక్కువ ప్రమాదకరం, కానీ దిగుబడి తగ్గిస్తుంది."
+    }
+  },
+  "Tomato___healthy": {
+    "en": {
+      "name": "Healthy",
+      "description": "No signs of disease. Leaves look normal and green."
+    },
+    "hi": {
+      "name": "स्वस्थ",
+      "description": "कोई रोग नहीं। पत्तियाँ सामान्य और हरी हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ",
+      "description": "ಯಾವುದೇ ರೋಗದ ಲಕ್ಷಣಗಳಿಲ್ಲ. ಎಲೆಗಳು ಸಾಮಾನ್ಯ ಮತ್ತು ಹಸಿರಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైనది",
+      "description": "వ్యాధి లక్షణాలు లేవు. ఆకులు సాధారణంగా, పచ్చగా ఉన్నాయి."
+    }
+  }
+}

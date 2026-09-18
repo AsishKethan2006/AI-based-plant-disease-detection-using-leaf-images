@@ -1,0 +1,57 @@
+# ==============================================================================
+# Global & Environment
+# ==============================================================================
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================================================================
+# Backend Secrets, Storage & Uploads
+# ==============================================================================
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+backend/app.db
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+
+backend/static/uploads/*
+!backend/static/uploads/.gitkeep
+
+backend/saved_models/*
+!backend/saved_models/.gitkeep
+
+# ==============================================================================
+# Machine Learning (Weights, Datasets, Checkpoints)
+# ==============================================================================
+ml/data/
+ml/datasets/
+ml/.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+
+# ==============================================================================
+# Frontend (Node, Dependencies, Builds)
+# ==============================================================================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env.local
+frontend/.env.*.local

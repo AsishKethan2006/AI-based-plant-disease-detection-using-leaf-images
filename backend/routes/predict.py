@@ -1,11 +1,14 @@
+import io
 import json
 import os
 import uuid
+from PIL import Image
 from fastapi import APIRouter, Depends, UploadFile, File, HTTPException
 from sqlalchemy.orm import Session
 from database.db import get_db
 from database.models import User, Prediction
 from auth.security import get_current_user
+from auth.rate_limiter import limiter
 
 router = APIRouter(prefix="/predict", tags=["predict"])
 
@@ -45,6 +48,9 @@ def predict(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    # Enforce prediction throttle (max 10 requests/minute per user)
+    limiter.check_predict_rate_limit(current_user.id)
+
     if not file.content_type or not file.content_type.startswith("image/"):
         raise HTTPException(400, "Uploaded file must be an image")
 
@@ -55,6 +61,17 @@ def predict(
     file_bytes = file.file.read(MAX_FILE_SIZE + 1)
     if len(file_bytes) > MAX_FILE_SIZE:
         raise HTTPException(400, "File size exceeds 10MB limit")
+
+    # Cryptographic & decoding verification: ensure binary content is genuinely a valid image
+    try:
+        img = Image.open(io.BytesIO(file_bytes))
+        img.verify()
+        if img.format.upper() not in {"JPEG", "PNG"}:
+            raise HTTPException(400, "Uploaded image format not supported. Only JPEG and PNG are allowed.")
+    except HTTPException:
+        raise
+    except Exception:
+        raise HTTPException(400, "Corrupted or invalid image file.")
 
     filename = f"{uuid.uuid4().hex}{file_ext}"
     disk_path = os.path.join(UPLOAD_DIR, filename)

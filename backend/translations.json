@@ -1,20 +1,524 @@
 {
-  "Tomato___Late_blight": {
+  "Apple___Apple_scab": {
     "en": {
-      "name": "Late Blight",
-      "description": "Dark spots on leaves that spread fast in cool, wet weather. Treat quickly to save the crop."
+      "name": "Apple Scab",
+      "description": "Olive-green or brown velvety spots on leaves and fruit. Prune infected parts and apply fungicide."
     },
     "hi": {
-      "name": "पछेती झुलसा",
-      "description": "पत्तियों पर काले धब्बे, ठंड और नमी में तेज़ी से फैलते हैं। जल्दी इलाज करें।"
+      "name": "सेब का स्केब रोग",
+      "description": "पत्तियों और फलों पर गहरे जैतून जैसे धब्बे। कवकनाशी का छिड़काव करें।"
     },
     "kn": {
-      "name": "ತಡವಾದ ಅಂಗಮಾರಿ ರೋಗ",
-      "description": "ಎಲೆಗಳ ಮೇಲೆ ಕಪ್ಪು ಚುಕ್ಕೆಗಳು, ತಂಪಾದ ಮತ್ತು ತೇವಾಂಶವುಳ್ಳ ವಾತಾವರಣದಲ್ಲಿ ವೇಗವಾಗಿ ಹರಡುತ್ತದೆ. ಬೇಗ ಚಿಕಿತ್ಸೆ ನೀಡಿ."
+      "name": "ಸೇಬು ಸ್ಕ್ಯಾಬ್ ರೋಗ",
+      "description": "ಎಲೆಗಳು ಮತ್ತು ಹಣ್ಣುಗಳ ಮೇಲೆ ಕಂದು ಅಥವಾ ಆಲಿವ್ ಬಣ್ಣದ ಚುಕ್ಕೆಗಳು. ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಿ."
     },
     "te": {
-      "name": "ఆలస్య తెగులు",
-      "description": "ఆకులపై నల్లని మచ్చలు, చల్లని, తేమతో కూడిన వాతావరణంలో వేగంగా వ్యాపిస్తుంది. వెంటనే చికిత్స చేయండి."
+      "name": "యాపిల్ స్కాబ్ తెగులు",
+      "description": "ఆకులు మరియు పండ్లపై ముదురు మచ్చలు. శిలీంద్ర సంహారిణి పిచికారీ చేయండి."
+    }
+  },
+  "Apple___Black_rot": {
+    "en": {
+      "name": "Apple Black Rot",
+      "description": "Reddish-brown spots on leaves and rotting sunken areas on fruit. Remove dead wood and apply protective sprays."
+    },
+    "hi": {
+      "name": "सेब का काला सड़ांध",
+      "description": "पत्तियों पर लाल-भूरे धब्बे और फल सड़ना। सूखी शाखाओं को काटें और सुरक्षात्मक छिड़काव करें।"
+    },
+    "kn": {
+      "name": "ಸೇಬು ಕಪ್ಪು ಕೊಳೆತ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಕಂದು ಚುಕ್ಕೆಗಳು ಮತ್ತು ಹಣ್ಣು ಕೊಳೆಯುವುದು. ಒಣಗಿದ ಕೊಂಬೆಗಳನ್ನು ಕತ್ತರಿಸಿ."
+    },
+    "te": {
+      "name": "యాపిల్ నల్ల కుళ్ళు తెగులు",
+      "description": "ఆకులపై ఎరుపు-గోధుమ మచ్చలు మరియు పండ్లు కుళ్ళడం. ఎండిన కొమ్మలను తొలగించండి."
+    }
+  },
+  "Apple___Cedar_apple_rust": {
+    "en": {
+      "name": "Cedar Apple Rust",
+      "description": "Bright orange-yellow spots on leaves. Caused by nearby juniper or cedar trees. Apply rust-targeting fungicide."
+    },
+    "hi": {
+      "name": "सेब का रतुआ रोग",
+      "description": "पत्तियों पर चमकीले नारंगी-पीले धब्बे। जंग रोधी कवकनाशी का छिड़काव करें।"
+    },
+    "kn": {
+      "name": "ಸೇಬು ತುಕ್ಕು ರೋಗ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಕಿತ್ತಳೆ-ಹಳದಿ ಚುಕ್ಕೆಗಳು. ತುಕ್ಕು ನಿಯಂತ್ರಕ ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಿ."
+    },
+    "te": {
+      "name": "యాపిల్ తుప్పు తెగులు",
+      "description": "ఆకులపై నారింజ-పసుపు మచ్చలు. తుప్పు నివారణ మందులను పిచికారీ చేయండి."
+    }
+  },
+  "Apple___healthy": {
+    "en": {
+      "name": "Healthy Apple",
+      "description": "Apple foliage is vibrant, green, and shows no pathogen infection."
+    },
+    "hi": {
+      "name": "स्वस्थ सेब",
+      "description": "पत्तियां हरी और स्वस्थ हैं, कोई रोग नहीं है।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ಸೇಬು",
+      "description": "ಎಲೆಗಳು ಆರೋಗ್ಯಕರ ಮತ್ತು ಹಸಿರಾಗಿವೆ, ಯಾವುದೇ ರೋಗದ ಲಕ್ಷಣಗಳಿಲ್ಲ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన యాపిల్",
+      "description": "ఆకులు పచ్చగా మరియు ఆరోగ్యంగా ఉన్నాయి, ఎలాంటి తెగులు లేదు."
+    }
+  },
+  "Blueberry___healthy": {
+    "en": {
+      "name": "Healthy Blueberry",
+      "description": "Foliage is green and shows no symptoms of disease or pest infestation."
+    },
+    "hi": {
+      "name": "स्वस्थ ब्लूबेरी",
+      "description": "पत्तियां सामान्य, स्वस्थ और रोगमुक्त हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ಬ್ಲೂಬೆರ್ರಿ",
+      "description": "ಎಲೆಗಳು ಆರೋಗ್ಯಕರ ಮತ್ತು ರೋಗ ಮುಕ್ತವಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన బ్లూబెర్రీ",
+      "description": "ఆకులు ఆరోగ్యంగా ఉన్నాయి, ఎటువంటి తెగులు ఆశించలేదు."
+    }
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "en": {
+      "name": "Cherry Powdery Mildew",
+      "description": "White powdery fungal coating on leaves and young shoots. Apply sulfur-based or bio-fungicides."
+    },
+    "hi": {
+      "name": "चेरी का चूर्णिल आसिता रोग",
+      "description": "पत्तियों पर सफेद पाउडर जैसी परत। सल्फर युक्त कवकनाशी का प्रयोग करें।"
+    },
+    "kn": {
+      "name": "ಚೆರ್ರಿ ಬೂದಿ ರೋಗ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಬಿಳಿ ಬೂದಿಯಂತಹ ಪದರ. ಗಂಧಕ ಆಧಾರಿತ ಶಿಲೀಂಧ್ರನಾಶಕ ಸಿಂಪಡಿಸಿ."
+    },
+    "te": {
+      "name": "చెర్రీ బూడిద తెగులు",
+      "description": "ఆకులపై తెల్లటి బూడిద లాంటి పొర. గంధకం ఆధారిత శిలీంద్ర సంహారిణి వాడండి."
+    }
+  },
+  "Cherry_(including_sour)___healthy": {
+    "en": {
+      "name": "Healthy Cherry",
+      "description": "Cherry foliage is healthy with normal coloration and vigorous growth."
+    },
+    "hi": {
+      "name": "स्वस्थ चेरी",
+      "description": "चेरी की पत्तियां स्वस्थ और रोगमुक्त हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ಚೆರ್ರಿ",
+      "description": "ಚೆರ್ರಿ ಎಲೆಗಳು ಸಾಮಾನ್ಯ ಮತ್ತು ಆರೋಗ್ಯಕರವಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన చెర్రీ",
+      "description": "చెర్రీ ఆకులు ఆరోగ్యంగా మరియు పచ్చగా ఉన్నాయి."
+    }
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "en": {
+      "name": "Corn Gray Leaf Spot",
+      "description": "Rectangular gray to brown lesions running parallel to leaf veins. Rotate crops and apply foliar fungicides."
+    },
+    "hi": {
+      "name": "मक्का ग्रे लीफ स्पॉट",
+      "description": "पत्तियों की नसों के समानांतर आयताकार भूरे धब्बे। फसल चक्र अपनाएं और कवकनाशी डालें।"
+    },
+    "kn": {
+      "name": "ಮೆಕ್ಕೆಜೋಳ ಬೂದು ಎಲೆ ಚುಕ್ಕೆ",
+      "description": "ಎಲೆಯ ನರಗಳಿಗೆ ಸಮಾನಾಂತರವಾಗಿ ಆಯತಾಕಾರದ ಕಂದು ಚುಕ್ಕೆಗಳು. ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ."
+    },
+    "te": {
+      "name": "మొక్కజొన్న బూడిద రంగు మచ్చ తెగులు",
+      "description": "ఆకులపై దీర్ఘచతురస్రాకార బూడిద-గోధుమ మచ్చలు. పంట మార్పిడి చేయండి."
+    }
+  },
+  "Corn_(maize)___Common_rust_": {
+    "en": {
+      "name": "Corn Common Rust",
+      "description": "Small reddish-brown pustules scattered across both leaf surfaces. Plant resistant hybrids."
+    },
+    "hi": {
+      "name": "मक्का का सामान्य रतुआ",
+      "description": "पत्तियों की दोनों सतहों पर छोटे लाल-भूरे रंग के दाने। प्रतिरोधी किस्में लगाएं।"
+    },
+    "kn": {
+      "name": "ಮೆಕ್ಕೆಜೋಳ ಸಾಮಾನ್ಯ ತುಕ್ಕು ರೋಗ",
+      "description": "ಎಲೆಯ ಎರಡೂ ಬದಿಗಳಲ್ಲಿ ಸಣ್ಣ ಕೆಂಪು-ಕಂದು ಬಣ್ಣದ ಗುಳ್ಳೆಗಳು. ನಿರೋಧಕ ತಳಿಗಳನ್ನು ಬೆಳೆಯಿರಿ."
+    },
+    "te": {
+      "name": "మొక్కజొన్న తుప్పు తెగులు",
+      "description": "ఆకులపై చిన్న ఎరుపు-గోధుమ రంగు పొక్కులు. నిరోధక రకాలను ఎంచుకోండి."
+    }
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "en": {
+      "name": "Corn Northern Leaf Blight",
+      "description": "Long, elliptical grayish-green or tan lesions on leaves. Use resistant varieties and manage crop residues."
+    },
+    "hi": {
+      "name": "मक्का उत्तरी पत्ती झुलसा",
+      "description": "पत्तियों पर लंबे, सिगार के आकार के धूसर धब्बे। प्रतिरोधी किस्में लगाएं।"
+    },
+    "kn": {
+      "name": "ಮೆಕ್ಕೆಜೋಳ ಉತ್ತರ ಎಲೆ ಅಂಗಮಾರಿ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಉದ್ದವಾದ ಕಂದು ಬಣ್ಣದ ಕಲೆಗಳು. ಶಿಲೀಂಧ್ರನಾಶಕ ಸಿಂಪಡಿಸಿ."
+    },
+    "te": {
+      "name": "మొక్కజొన్న ఉత్తర ఆకు ఎండు తెగులు",
+      "description": "ఆకులపై పొడవాటి బూడిద-గోధుమ రంగు మచ్చలు. నివారణ మందులను వాడండి."
+    }
+  },
+  "Corn_(maize)___healthy": {
+    "en": {
+      "name": "Healthy Corn",
+      "description": "Maize leaf tissue is uniform and green without lesions or discoloration."
+    },
+    "hi": {
+      "name": "स्वस्थ मक्का",
+      "description": "मक्के की पत्तियां पूरी तरह स्वस्थ और हरी हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ಮೆಕ್ಕೆಜೋಳ",
+      "description": "ಮೆಕ್ಕೆಜೋಳದ ಎಲೆಗಳು ರೋಗವಿಲ್ಲದೆ ಆರೋಗ್ಯವಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన మొక్కజొన్న",
+      "description": "మొక్కజొన్న ఆకులు ఎటువంటి తెగులు లేకుండా ఆరోగ్యంగా ఉన్నాయి."
+    }
+  },
+  "Grape___Black_rot": {
+    "en": {
+      "name": "Grape Black Rot",
+      "description": "Small circular brown spots with dark borders on leaves; berries shrivel into black mummies. Prune and apply fungicide."
+    },
+    "hi": {
+      "name": "अंगूर का काला सड़ांध",
+      "description": "पत्तियों पर छोटे गोलाकार भूरे धब्बे, अंगूर सूखकर काले हो जाते हैं। कवकनाशी छिड़कें।"
+    },
+    "kn": {
+      "name": "ದ್ರಾಕ್ಷಿ ಕಪ್ಪು ಕೊಳೆತ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಸಣ್ಣ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆಗಳು, ಹಣ್ಣುಗಳು ಕಪ್ಪಾಗಿ ಒಣಗುತ್ತವೆ."
+    },
+    "te": {
+      "name": "ద్రాక్ష నల్ల కుళ్ళు తెగులు",
+      "description": "ఆకులపై గుండ్రని గోధుమ మచ్చలు, కాయలు నల్లగా మారి ఎండిపోతాయి."
+    }
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "en": {
+      "name": "Grape Esca (Black Measles)",
+      "description": "Tiger-stripe patterns of yellow/brown discoloration between veins on leaves. Remove infected vines."
+    },
+    "hi": {
+      "name": "अंगूर का एस्का रोग",
+      "description": "पत्तियों की नसों के बीच बाघ जैसी धारियां। संक्रमित लताओं को हटाएं।"
+    },
+    "kn": {
+      "name": "ದ್ರಾಕ್ಷಿ ಎಸ್ಕಾ ರೋಗ",
+      "description": "ಎಲೆಗಳ ನರಗಳ ನಡುವೆ ಪಟ್ಟೆಗಳಂತಹ ಬಣ್ಣ ಬದಲಾವಣೆ. ಸೋಂಕಿತ ಬಳ್ಳಿಗಳನ್ನು ತೆಗೆದುಹಾಕಿ."
+    },
+    "te": {
+      "name": "ద్రాక్ష ఎస్కా తెగులు",
+      "description": "ఆకులపై చారల వంటి గోధుమ రంగు మచ్చలు. సోకిన తీగలను తొలగించండి."
+    }
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "en": {
+      "name": "Grape Leaf Blight",
+      "description": "Irregular brown necrotic lesions on leaves, leading to premature leaf drop. Spray copper-based fungicides."
+    },
+    "hi": {
+      "name": "अंगूर का पत्ती झुलसा",
+      "description": "पत्तियों पर अनियमित भूरे धब्बे, पत्तियां जल्दी झड़ जाती हैं। तांबा आधारित कवकनाशी छिड़कें।"
+    },
+    "kn": {
+      "name": "ದ್ರಾಕ್ಷಿ ಎಲೆ ಅಂಗಮಾರಿ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಕಂದು ಬಣ್ಣದ ಮಚ್ಚೆಗಳು, ಎಲೆಗಳು ಉದುರುತ್ತವೆ. ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಿ."
+    },
+    "te": {
+      "name": "ద్రాక్ష ఆకు ఎండు తెగులు",
+      "description": "ఆకులపై అపసవ్య గోధుమ మచ్చలు. కాపర్ శిలీంద్ర సంహారిణి పిచికారీ చేయండి."
+    }
+  },
+  "Grape___healthy": {
+    "en": {
+      "name": "Healthy Grape",
+      "description": "Grapevine canopy exhibits lush, undamaged green leaves."
+    },
+    "hi": {
+      "name": "स्वस्थ अंगूर",
+      "description": "अंगूर की बेल स्वस्थ और हरी-भरी है।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ದ್ರಾಕ್ಷಿ",
+      "description": "ದ್ರಾಕ್ಷಿ ಎಲೆಗಳು ಹಚ್ಚಹಸಿರಾಗಿ ರೋಗಮುಕ್ತವಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన ద్రాక్ష",
+      "description": "ద్రాక్ష ఆకులు ఆరోగ్యంగా, పచ్చగా ఉన్నాయి."
+    }
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "en": {
+      "name": "Citrus Greening (HLB)",
+      "description": "Asymmetric yellow mottling on leaves, small lopsided bitter fruit. Control psyllid vectors and remove infected trees."
+    },
+    "hi": {
+      "name": "साइट्रस ग्रीनिंग (एचएलबी)",
+      "description": "पत्तियों पर असमान पीलापन और फल कड़वे हो जाते हैं। कीड़ों को नियंत्रित करें।"
+    },
+    "kn": {
+      "name": "ಕಿತ್ತಳೆ ಹಳದಿ ರೋಗ (ಸಿಟ್ರಸ್ ಗ್ರೀನಿಂಗ್)",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಅಸಮ ಹಳದಿ ಚುಕ್ಕೆಗಳು. ಕೀಟ ನಿಯಂತ್ರಣ ಮಾಡಿ ಸೋಂಕಿತ ಗಿಡ ತೆಗೆಯಿರಿ."
+    },
+    "te": {
+      "name": "సిట్రస్ గ్రీనింగ్ తెగులు",
+      "description": "ఆకులపై అసమాన పసుపు మచ్చలు. తెగులు వ్యాపించే కీటకాలను నివారించండి."
+    }
+  },
+  "Peach___Bacterial_spot": {
+    "en": {
+      "name": "Peach Bacterial Spot",
+      "description": "Angular water-soaked spots turning purple-brown, leading to shot-hole leaf symptoms. Apply bactericides."
+    },
+    "hi": {
+      "name": "आड़ू का जीवाणु धब्बा",
+      "description": "पत्तियों पर कोणीय बैंगनी-भूरे धब्बे जो छिद्र बना देते हैं। जीवाणुनाशक का छिड़काव करें।"
+    },
+    "kn": {
+      "name": "ಪೀಚ್ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಚುಕ್ಕೆ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ರಂಧ್ರಗಳನ್ನು ಉಂಟುಮಾಡುವ ಕಂದು ಚುಕ್ಕೆಗಳು. ಬ್ಯಾಕ್ಟೀರಿಯಾನಾಶಕ ಬಳಸಿ."
+    },
+    "te": {
+      "name": "పీచ్ బాక్టీరియల్ మచ్చ తెగులు",
+      "description": "ఆకులపై చిన్న రంధ్రాలు ఏర్పడేలా చేసే గోధుమ మచ్చలు. బాక్టీరిసైడ్ వాడండి."
+    }
+  },
+  "Peach___healthy": {
+    "en": {
+      "name": "Healthy Peach",
+      "description": "Peach foliage is healthy and free from bacterial or fungal blights."
+    },
+    "hi": {
+      "name": "स्वस्थ आड़ू",
+      "description": "आड़ू की पत्तियां पूरी तरह स्वस्थ और सामान्य हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ಪೀಚ್",
+      "description": "ಪೀಚ್ ಎಲೆಗಳು ರೋಗವಿಲ್ಲದೆ ಆರೋಗ್ಯವಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన పీచ్",
+      "description": "పీచ్ ఆకులు ఎటువంటి రోగ లక్షణాలు లేకుండా ఉన్నాయి."
+    }
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "en": {
+      "name": "Bell Pepper Bacterial Spot",
+      "description": "Small water-soaked circular lesions turning brown on leaves and fruit. Use disease-free seeds and copper sprays."
+    },
+    "hi": {
+      "name": "शिमला मिर्च जीवाणु धब्बा",
+      "description": "पत्तियों पर छोटे गोलाकार भूरे धब्बे। रोगमुक्त बीज और कॉपर स्प्रे का प्रयोग करें।"
+    },
+    "kn": {
+      "name": "ದೊಡ್ಡ ಮೆಣಸಿನಕಾಯಿ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಚುಕ್ಕೆ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಸಣ್ಣ ಕಂದು ಕಲೆಗಳು. ತಾಮ್ರದ ದ್ರಾವಣ ಸಿಂಪಡಿಸಿ."
+    },
+    "te": {
+      "name": "క్యాప్సికం బాక్టీరియల్ మచ్చ తెగులు",
+      "description": "ఆకులపై చిన్న నీటి వంటి గోధుమ మచ్చలు. కాపర్ స్ప్రే వాడండి."
+    }
+  },
+  "Pepper,_bell___healthy": {
+    "en": {
+      "name": "Healthy Bell Pepper",
+      "description": "Bell pepper leaves are vigorous, dark green, and free from infection."
+    },
+    "hi": {
+      "name": "स्वस्थ शिमला मिर्च",
+      "description": "शिमला मिर्च के पौधे स्वस्थ और रोगमुक्त हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ದೊಡ್ಡ ಮೆಣಸಿನಕಾಯಿ",
+      "description": "ದೊಡ್ಡ ಮೆಣಸಿನಕಾಯಿ ಎಲೆಗಳು ಆರೋಗ್ಯಕರ ಮತ್ತು ಹಸಿರಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన క్యాప్సికం",
+      "description": "క్యాప్సికం ఆకులు పూర్తి ఆరోగ్యంగా ఉన్నాయి."
+    }
+  },
+  "Potato___Early_blight": {
+    "en": {
+      "name": "Potato Early Blight",
+      "description": "Concentric target-like rings on mature leaves causing yellowing and defoliation. Spray mancozeb or chlorothalonil."
+    },
+    "hi": {
+      "name": "आलू अगेती झुलसा",
+      "description": "पुरानी पत्तियों पर छल्लेदार भूरे धब्बे। मैंकोजेब कवकनाशी का छिड़काव करें।"
+    },
+    "kn": {
+      "name": "ಆಲೂಗಡ್ಡೆ ಆರಂಭಿಕ ಅಂಗಮಾರಿ",
+      "description": "ಹಳೆಯ ಎಲೆಗಳ ಮೇಲೆ ವರ್ತುಲಾಕಾರದ ಕಂದು ಚುಕ್ಕೆಗಳು. ಸೂಕ್ತ ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಿ."
+    },
+    "te": {
+      "name": "బంగాళాదుంప తొలి తెగులు",
+      "description": "ఆకులపై వలయాకారపు గోధుమ మచ్చలు. మాంకోజెబ్ మందును పిచికారీ చేయండి."
+    }
+  },
+  "Potato___Late_blight": {
+    "en": {
+      "name": "Potato Late Blight",
+      "description": "Water-soaked blackish lesions with white fungal growth on undersides in humid conditions. Destroy infected plants immediately."
+    },
+    "hi": {
+      "name": "आलू पछेती झुलसा",
+      "description": "पत्तियों पर काले पानीदार धब्बे और निचली सतह पर सफेद फफूंद। तुरंत कवकनाशी का छिड़काव करें।"
+    },
+    "kn": {
+      "name": "ಆಲೂಗಡ್ಡೆ ತಡವಾದ ಅಂಗಮಾರಿ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಕಪ್ಪು ಕಲೆಗಳು ಮತ್ತು ಕೆಳಭಾಗದಲ್ಲಿ ಶಿಲೀಂಧ್ರ. ತಕ್ಷಣ ಚಿಕಿತ್ಸೆ ನೀಡಿ."
+    },
+    "te": {
+      "name": "బంగాళాదుంప ఆలస్య తెగులు",
+      "description": "ఆకులపై నల్లటి తడి మచ్చలు. వెంటనే నివారణ చర్యలు తీసుకోండి."
+    }
+  },
+  "Potato___healthy": {
+    "en": {
+      "name": "Healthy Potato",
+      "description": "Potato foliage is vigorous, fully expanded, and without lesions."
+    },
+    "hi": {
+      "name": "स्वस्थ आलू",
+      "description": "आलू के पौधे पूरी तरह स्वस्थ और रोगमुक्त हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ಆಲೂಗಡ್ಡೆ",
+      "description": "ಆಲೂಗಡ್ಡೆ ಎಲೆಗಳು ಹಚ್ಚಹಸಿರಾಗಿದ್ದು ಆರೋಗ್ಯವಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన బంగాళాదుంప",
+      "description": "బంగాళాదుంప ఆకులు ఎటువంటి తెగులు లేకుండా ఆరోగ్యంగా ఉన్నాయి."
+    }
+  },
+  "Raspberry___healthy": {
+    "en": {
+      "name": "Healthy Raspberry",
+      "description": "Raspberry leaves show healthy green tissue and regular growth."
+    },
+    "hi": {
+      "name": "स्वस्थ रसभरी",
+      "description": "रसभरी की पत्तियां स्वस्थ और रोगमुक्त हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ರಾಸ್ಪ್ಬೆರಿ",
+      "description": "ರಾಸ್ಪ್ಬೆರಿ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన రాస్ప్బెర్రీ",
+      "description": "రాస్ప్బెర్రీ ఆకులు ఆరోగ్యంగా ఉన్నాయి."
+    }
+  },
+  "Soybean___healthy": {
+    "en": {
+      "name": "Healthy Soybean",
+      "description": "Soybean canopy exhibits healthy trifoliate leaves without disease symptoms."
+    },
+    "hi": {
+      "name": "स्वस्थ सोयाबीन",
+      "description": "सोयाबीन की पत्तियां स्वस्थ और हरी हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ಸೋಯಾಬೀನ್",
+      "description": "ಸೋಯಾಬೀನ್ ಎಲೆಗಳು ರೋಗವಿಲ್ಲದೆ ಆರೋಗ್ಯವಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన సోయాబీన్",
+      "description": "సోయాబీన్ పంట ఆరోగ్యంగా మరియు పచ్చగా ఉంది."
+    }
+  },
+  "Squash___Powdery_mildew": {
+    "en": {
+      "name": "Squash Powdery Mildew",
+      "description": "Talcum-like white powder spreading across leaf surfaces. Increase airflow and apply horticultural oils or fungicides."
+    },
+    "hi": {
+      "name": "कद्दू का चूर्णिल आसिता रोग",
+      "description": "पत्तियों पर सफेद पाउडर जैसी परत। कवकनाशी या नीम के तेल का छिड़काव करें।"
+    },
+    "kn": {
+      "name": "ಕುಂಬಳಕಾಯಿ ಬೂದಿ ರೋಗ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಬಿಳಿ ಪುಡಿಯ ಪದರ. ಬೇವಿನ ಎಣ್ಣೆ ಅಥವಾ ಶಿಲೀಂಧ್ರನಾಶಕ ಸಿಂಪಡಿಸಿ."
+    },
+    "te": {
+      "name": "గుమ్మడి బూడిద తెగులు",
+      "description": "ఆకులపై తెల్లటి పొడి పూసినట్లుంటుంది. వేప నూనె లేదా శిలీంద్ర సంహారిణి వాడండి."
+    }
+  },
+  "Strawberry___Leaf_scorch": {
+    "en": {
+      "name": "Strawberry Leaf Scorch",
+      "description": "Purple to dark brown spots enlarging until the entire leaf turns brown and scorched. Apply suitable fungicides."
+    },
+    "hi": {
+      "name": "स्ट्रॉबेरी पत्ती झुलसा",
+      "description": "पत्तियों पर गहरे बैंगनी-भूरे धब्बे, पत्तियां जली हुई दिखती हैं। कवकनाशी डालें।"
+    },
+    "kn": {
+      "name": "ಸ್ಟ್ರಾಬೆರಿ ಎಲೆ ಸುಟ್ಟ ರೋಗ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ನೇರಳೆ-ಕಂದು ಚುಕ್ಕೆಗಳು, ಎಲೆಗಳು ಸುಟ್ಟಂತೆ ಕಾಣುತ್ತವೆ. ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಿ."
+    },
+    "te": {
+      "name": "స్ట్రాబెర్రీ ఆకు మాకుడు తెగులు",
+      "description": "ఆకులపై ఊదా-గోధుమ మచ్చలు, ఆకులు మాడిపోయినట్లు కనిపిస్తాయి."
+    }
+  },
+  "Strawberry___healthy": {
+    "en": {
+      "name": "Healthy Strawberry",
+      "description": "Strawberry plants exhibit healthy, green, vigorous foliage."
+    },
+    "hi": {
+      "name": "स्वस्थ स्ट्रॉबेरी",
+      "description": "स्ट्रॉबेरी के पौधे स्वस्थ और रोगमुक्त हैं।"
+    },
+    "kn": {
+      "name": "ಆರೋಗ್ಯಕರ ಸ್ಟ್ರಾಬೆರಿ",
+      "description": "ಸ್ಟ್ರಾಬೆರಿ ಎಲೆಗಳು ಆರೋಗ್ಯಕರ ಮತ್ತು ಹಸಿರಾಗಿವೆ."
+    },
+    "te": {
+      "name": "ఆరోగ్యకరమైన స్ట్రాబెర్రీ",
+      "description": "స్ట్రాబెర్రీ ఆకులు ఎటువంటి తెగులు లేకుండా పచ్చగా ఉన్నాయి."
+    }
+  },
+  "Tomato___Bacterial_spot": {
+    "en": {
+      "name": "Tomato Bacterial Spot",
+      "description": "Small dark greasy spots on leaves with yellow halos. Avoid overhead irrigation and spray copper compounds."
+    },
+    "hi": {
+      "name": "टमाटर जीवाणु धब्बा",
+      "description": "पत्तियों पर पीले घेरे वाले छोटे काले धब्बे। कॉपर युक्त दवाओं का छिड़काव करें।"
+    },
+    "kn": {
+      "name": "ಟೊಮೆಟೊ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಚುಕ್ಕೆ",
+      "description": "ಹಳದಿ ವೃತ್ತ ಹೊಂದಿರುವ ಸಣ್ಣ ಕಪ್ಪು ಚುಕ್ಕೆಗಳು. ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕ ಸಿಂಪಡಿಸಿ."
+    },
+    "te": {
+      "name": "టమోటా బాక్టీరియల్ మచ్చ తెగులు",
+      "description": "ఆకులపై పసుపు రంగు వలయాలతో నల్లని మచ్చలు. కాపర్ స్ప్రే వాడండి."
     }
   },
   "Tomato___Early_blight": {
@@ -33,6 +537,132 @@
     "te": {
       "name": "తొలి తెగులు",
       "description": "పాత ఆకులపై గోధుమ రంగు వలయాకార మచ్చలు. ఆలస్య తెగులు కంటే తక్కువ ప్రమాదకరం, కానీ దిగుబడి తగ్గిస్తుంది."
+    }
+  },
+  "Tomato___Late_blight": {
+    "en": {
+      "name": "Late Blight",
+      "description": "Dark spots on leaves that spread fast in cool, wet weather. Treat quickly to save the crop."
+    },
+    "hi": {
+      "name": "पछेती झुलसा",
+      "description": "पत्तियों पर काले धब्बे, ठंड और नमी में तेज़ी से फैलते हैं। जल्दी इलाज करें।"
+    },
+    "kn": {
+      "name": "ತಡವಾದ ಅಂಗಮಾರಿ ರೋಗ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಕಪ್ಪು ಚುಕ್ಕೆಗಳು, ತಂಪಾದ ಮತ್ತು ತೇವಾಂಶವುಳ್ಳ ವಾತಾವರಣದಲ್ಲಿ ವೇಗವಾಗಿ ಹರಡುತ್ತದೆ. ಬೇಗ ಚಿಕಿತ್ಸೆ ನೀಡಿ."
+    },
+    "te": {
+      "name": "ఆలస్య తెగులు",
+      "description": "ఆకులపై నల్లని మచ్చలు, చల్లని, తేమతో కూడిన వాతావరణంలో వేగంగా వ్యాపిస్తుంది. వెంటనే చికిత్స చేయండి."
+    }
+  },
+  "Tomato___Leaf_Mold": {
+    "en": {
+      "name": "Tomato Leaf Mold",
+      "description": "Pale yellow blotches on upper leaf surfaces and velvety olive-green mold underneath. Improve greenhouse ventilation."
+    },
+    "hi": {
+      "name": "टमाटर लीफ मोल्ड",
+      "description": "पत्तियों के ऊपर पीले धब्बे और नीचे फफूंद। वेंटिलेशन सुधारें और कवकनाशी छिड़कें।"
+    },
+    "kn": {
+      "name": "ಟೊಮೆಟೊ ಎಲೆ ಬೂಸ್ಟು ರೋಗ",
+      "description": "ಎಲೆಗಳ ಮೇಲ್ಭಾಗದಲ್ಲಿ ಹಳದಿ ಕಲೆಗಳು ಮತ್ತು ಕೆಳಭಾಗದಲ್ಲಿ ಬೂಸ್ಟು. ಗಾಳಿಯಾಡುವಿಕೆ ಹೆಚ್ಚಿಸಿ."
+    },
+    "te": {
+      "name": "టమోటా ఆకు బూజు తెగులు",
+      "description": "ఆకులపై పసుపు మచ్చలు మరియు అడుగున బూజు. గాలి ప్రసరణ పెంచండి."
+    }
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "en": {
+      "name": "Tomato Septoria Leaf Spot",
+      "description": "Small circular spots with grayish-white centers and dark borders on lower leaves. Remove affected lower foliage."
+    },
+    "hi": {
+      "name": "टमाटर सेप्टोरिया पत्ती धब्बा",
+      "description": "निचली पत्तियों पर भूरे घेरे वाले छोटे गोल धब्बे। निचली संक्रमित पत्तियों को हटाएं।"
+    },
+    "kn": {
+      "name": "ಟೊಮೆಟೊ ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಚುಕ್ಕೆ",
+      "description": "ಕೆಳಭಾಗದ ಎಲೆಗಳ ಮೇಲೆ ಸಣ್ಣ ಬೂದು-ಬಿಳಿ ಚುಕ್ಕೆಗಳು. ರೋಗಗ್ರಸ್ತ ಎಲೆಗಳನ್ನು ಕತ್ತರಿಸಿ."
+    },
+    "te": {
+      "name": "టమోటా సెప్టోరియా ఆకు మచ్చ తెగులు",
+      "description": "కింది ఆకులపై చిన్న గుండ్రని మచ్చలు. సోకిన ఆకులను తొలగించండి."
+    }
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "en": {
+      "name": "Tomato Two-Spotted Spider Mite",
+      "description": "Yellow stippling or bronzing on leaves accompanied by fine webbing. Spray miticide or neem oil."
+    },
+    "hi": {
+      "name": "टमाटर मकड़ी कीट (स्पाइडर माइट)",
+      "description": "पत्तियों पर बारीक जाला और पीलापन। नीम तेल या माइटिसाइड का छिड़काव करें।"
+    },
+    "kn": {
+      "name": "ಟೊಮೆಟೊ ಜೇಡ ಹುಳು ಬಾಧೆ",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಸಣ್ಣ ಜಾಲರಿ ಮತ್ತು ಹಳದಿ ಚುಕ್ಕೆಗಳು. ಬೇವಿನ ಎಣ್ಣೆ ಸಿಂಪಡಿಸಿ."
+    },
+    "te": {
+      "name": "టమోటా నల్లి పురుగు తెగులు",
+      "description": "ఆకులపై సన్నని బూజు మరియు పసుపు రంగు మచ్చలు. వేప నూనె లేదా మైటిసైడ్ వాడండి."
+    }
+  },
+  "Tomato___Target_Spot": {
+    "en": {
+      "name": "Tomato Target Spot",
+      "description": "Brown pinpoint lesions enlarging into circular spots with target-like rings. Apply protectant fungicides."
+    },
+    "hi": {
+      "name": "टमाटर टारगेट स्पॉट",
+      "description": "पत्तियों पर केंद्रक जैसे छल्लेदार भूरे धब्बे। कवकनाशी का छिड़काव करें।"
+    },
+    "kn": {
+      "name": "ಟೊಮೆಟೊ ಟಾರ್ಗೆಟ್ ಸ್ಪಾಟ್ ರೋಗ",
+      "description": "ವರ್ತುಲಾಕಾರದ ಗುರಿಯಂತಹ ಕಂದು ಚುಕ್ಕೆಗಳು. ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಿ."
+    },
+    "te": {
+      "name": "టమోటా టార్గెట్ స్పాట్ తెగులు",
+      "description": "ఆకులపై వలయాకారపు గోధుమ మచ్చలు. రక్షక శిಲೀంద్ర సంహారిణి పిచికారీ చేయండి."
+    }
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "en": {
+      "name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "description": "Upward curling of leaves with yellowing margins and severe stunting. Transmitted by whiteflies; control vector."
+    },
+    "hi": {
+      "name": "टमाटर पीला पत्ती कर्ल वायरस",
+      "description": "पत्तियां ऊपर की ओर मुड़ जाती हैं और पीली हो जाती हैं। सफेद मक्खी का नियंत्रण करें।"
+    },
+    "kn": {
+      "name": "ಟೊಮೆಟೊ ಎಲೆ ಮುದುರು ರೋಗ",
+      "description": "ಎಲೆಗಳು ಮೇಲ್ಮುಖವಾಗಿ ಮುದುರಿಕೊಂಡು ಹಳದಿಯಾಗುತ್ತವೆ. ಬಿಳಿ ನೊಣಗಳನ್ನು ನಿಯಂತ್ರಿಸಿ."
+    },
+    "te": {
+      "name": "టమోటా ఆకు ముడత వైరస్ తెగులు",
+      "description": "ఆకులు పైకి ముడుచుకుని పసుపు రంగులోకి మారుతాయి. తెల్లదోమలను అరికట్టండి."
+    }
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "en": {
+      "name": "Tomato Mosaic Virus (ToMV)",
+      "description": "Mottled light and dark green areas on leaves, distorted foliage. Disinfect tools and remove infected plants."
+    },
+    "hi": {
+      "name": "टमाटर मोज़ेक वायरस",
+      "description": "पत्तियों पर हल्का और गहरा हरा चितकब्रापन। संक्रमित पौधों को नष्ट करें।"
+    },
+    "kn": {
+      "name": "ಟೊಮೆಟೊ ಮೊಸಾಯಿಕ್ ವೈರಸ್",
+      "description": "ಎಲೆಗಳ ಮೇಲೆ ಹಸಿರು-ಹಳದಿ ಚಿತ್ರ-ವಿಚಿತ್ರ ಕಲೆಗಳು. ಉಪಕರಣಗಳನ್ನು ಸೋಂಕುರಹಿತಗೊಳಿಸಿ."
+    },
+    "te": {
+      "name": "టమోటా మొజాయిక్ వైరస్ తెగులు",
+      "description": "ఆకులపై పసుపు-పచ్చని మచ్చలు. సోకిన మొక్కలను నాశనం చేయండి."
     }
   },
   "Tomato___healthy": {

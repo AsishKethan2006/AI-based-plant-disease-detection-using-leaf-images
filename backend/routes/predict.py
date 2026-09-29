@@ -9,6 +9,7 @@ from database.db import get_db
 from database.models import User, Prediction
 from auth.security import get_current_user
 from auth.rate_limiter import limiter
+from ml_inference import run_inference
 
 router = APIRouter(prefix="/predict", tags=["predict"])
 
@@ -81,17 +82,8 @@ def predict(
     # URL path (forward slashes) — this is what the frontend loads, not the OS path
     image_path = f"/static/uploads/{filename}"
 
-    # --- STUB: replace this block with real model.predict() once the CNN is ready.
-    # The keys and types below are final — only these values are fake.
-    predicted_class = "Tomato___Late_blight"
-    confidence = 0.91
-    top3_predictions = [
-        {"class": "Tomato___Late_blight", "confidence": 0.91},
-        {"class": "Tomato___Early_blight", "confidence": 0.06},
-        {"class": "Tomato___healthy", "confidence": 0.03},
-    ]
-    gradcam_path = None
-    # --- END STUB ---
+    # Invoke fine-tuned Vision Transformer model inference
+    predicted_class, confidence, top3_predictions, gradcam_path = run_inference(disk_path)
 
     prediction = Prediction(
         user_id=current_user.id,

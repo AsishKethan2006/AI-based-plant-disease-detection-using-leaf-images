@@ -44,8 +44,8 @@ ml/.ipynb_checkpoints/
 *.h5
 *.keras
 *.pt
-*.pth
 *.onnx
+*.pth
 
 # ==============================================================================
 # Frontend (Node, Dependencies, Builds)

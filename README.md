@@ -1,98 +1,72 @@
-# Automated Plant Foliar Disease Diagnosis and Explainability System
+# Machine Learning Pipeline: Vision Transformer (ViT) Plant Disease Diagnosis
 
-An end-to-end computer vision platform engineered to diagnose foliar pathologies across key agricultural cultivars (tomato, potato, maize, and rice). The system couples convolutional neural network (CNN) inference with Gradient-weighted Class Activation Mapping (Grad-CAM) to provide transparent visual explainability and multi-language agronomic advisories across English, Hindi, Kannada, and Telugu.
-
----
-
-## 1. Project Architecture
-
-The repository is structured as a multi-component workspace separating concern across the inference service, model training pipeline, client interface, and technical documentation:
-
-```
-.
-├── backend/                      # FastAPI asynchronous REST backend
-│   ├── auth/                     # JWT authentication, password hashing (bcrypt)
-│   ├── database/                 # SQLAlchemy ORM models, SQLite database connector
-│   ├── saved_models/             # Local storage directory for trained model weights
-│   ├── routes/                   # API endpoint routers (auth, predict)
-│   ├── static/uploads/           # Ingested image assets and Grad-CAM visualizations
-│   ├── HANDOFF.md                # ML integration specifications and inference contracts
-│   ├── requirements.txt          # Python runtime dependencies
-│   ├── test.py                   # Automated endpoint and security test suite
-│   ├── translations.json         # Agronomic advisory taxonomy (EN, HI, KN, TE)
-│   ├── main.py                   # Application entry point, CORS, and static mount
-│   ├── schemas.py                # Pydantic data schemas
-│   └── .env.example              # Environment variable template
-├── frontend/                     # Client web application (React / Vite)
-├── ml/                           # Model training notebooks, preprocessing, and evaluation
-├── docs/                         # Engineering reports, architecture schematics, slides
-└── .gitignore                    # Multi-stack version control exclusion rules
-```
+This directory contains the methodology, model architecture, training configuration, and explainable AI (XAI) pipeline for the automated foliar disease classification system.
 
 ---
 
-## 2. Technical Stack and Methodological Foundations
+## 1. Model Architecture
 
-### A. Deep Learning & Visual Explainability (`ml/`)
-* **Scope**: Targeted disease detection for *Solanum lycopersicum* (Tomato), *Solanum tuberosum* (Potato), *Zea mays* (Maize), and *Oryza sativa* (Rice) using an extracted, verified subset of the PlantVillage benchmark.
-* **Explainable AI**: Employs Grad-CAM (Selvaraju et al., 2017) to compute the gradient of the predicted class score with respect to feature maps of the final convolutional layer, rendering spatial heatmaps that validate pathogen localization against genuine pathological indicators rather than background artifacts.
-
-### B. RESTful Backend Service (`backend/`)
-* **Framework**: FastAPI (ASGI) with Pydantic type validation.
-* **Database & ORM**: SQLite datastore managed through SQLAlchemy 2.0.
-* **Security**: Stateless JSON Web Token (JWT) authorization conforming to RFC 7519; passwords salted and hashed using standard bcrypt algorithms; restricted upload bounds (10MB limit) to preclude denial-of-service vulnerabilities.
-* **Agronomic Localization**: Language-adaptive diagnostic layer mapping standardized disease classifications into regional vernaculars (Hindi, Kannada, Telugu) alongside English.
-
-### C. Client Application (`frontend/`)
-* Single-page reactive application facilitating leaf image capture, secure token caching, real-time prediction rendering, Grad-CAM visualization inspection, and user historical log retrieval.
+The core diagnosis engine leverages a **Vision Transformer (ViT-B/16)** fine-tuned for multi-class plant pathology classification:
+- **Base Architecture**: `torchvision.models.vit_b_16`
+- **Input Resolution**: $224 \times 224 \times 3$ RGB
+- **Patch Size**: $16 \times 16$ (generating a $14 \times 14 = 196$ spatial token grid)
+- **Embedding Dimension**: $D = 768$
+- **Transformer Encoder**: 12 Multi-Head Self-Attention (MSA) layers, 12 attention heads per layer
+- **Classification Head**: `Linear(768, 38)` producing unnormalized logits over 38 botanical pathology classes
+- **Inference Latency**: $\approx 120\text{ ms}$ on standard CPU; $< 15\text{ ms}$ on CUDA GPU
 
 ---
 
-## 3. Team Responsibilities (VTU B.Tech Project)
+## 2. Dataset Taxonomy & Coverage
 
-* **Backend Development**: API engineering, database design, JWT authentication, localization lookup engine, security auditing, and inference integration contracts.
-* **Machine Learning**: Dataset preprocessing, CNN architecture selection/training, hyperparameter optimization, and Grad-CAM implementation.
-* **Frontend Engineering**: User interface development, state management, localized display rendering, and REST endpoint integration.
-* **Testing & Deployment**: Automated test verification, integration testing, containerization, and deployment orchestration.
+The model is trained and validated on the benchmark **PlantVillage** dataset, covering **38 foliar conditions** across 14 crop cultivars:
 
----
-
-## 4. Local Development Setup
-
-### Backend Service Setup
-
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. Configure Python virtual environment:
-   ```bash
-   python -m venv venv
-   # Linux/macOS: source venv/bin/activate
-   # Windows: .\venv\Scripts\activate
-   ```
-3. Install required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Configure environment variables:
-   ```bash
-   cp .env.example .env
-   # Update SECRET_KEY and DATABASE_URL in .env as necessary
-   ```
-5. Execute automated test suite:
-   ```bash
-   python test.py
-   ```
-6. Start the local server:
-   ```bash
-   uvicorn main:app --reload --port 8000
-   ```
-   Interactive API documentation is accessible at `http://localhost:8000/docs`.
+| Cultivar | Conditions & Pathologies |
+| :--- | :--- |
+| **Apple** | Apple Scab, Black Rot, Cedar Apple Rust, Healthy |
+| **Blueberry** | Healthy |
+| **Cherry** | Powdery Mildew, Healthy |
+| **Corn (Maize)** | Cercospora Gray Leaf Spot, Common Rust, Northern Leaf Blight, Healthy |
+| **Grape** | Black Rot, Esca (Black Measles), Leaf Blight (Isariopsis), Healthy |
+| **Orange** | Huanglongbing (Citrus Greening) |
+| **Peach** | Bacterial Spot, Healthy |
+| **Pepper (Bell)** | Bacterial Spot, Healthy |
+| **Potato** | Early Blight, Late Blight, Healthy |
+| **Raspberry** | Healthy |
+| **Soybean** | Healthy |
+| **Squash** | Powdery Mildew |
+| **Strawberry** | Leaf Scorch, Healthy |
+| **Tomato** | Bacterial Spot, Early Blight, Late Blight, Leaf Mold, Septoria Leaf Spot, Two-Spotted Spider Mite, Target Spot, Yellow Leaf Curl Virus (TYLCV), Mosaic Virus (ToMV), Healthy |
 
 ---
 
-## 5. References
+## 3. Image Preprocessing & Normalization
 
-1. Hughes, D. P., & Salathé, M. (2015). An open access repository of images on plant health to enable the development of mobile disease diagnostics. *arXiv preprint arXiv:1511.08060*.
-2. Selvaraju, R. R., Cogswell, M., Das, A., Vedaldi, A., Parikh, D., & Batra, D. (2017). Grad-CAM: Visual explanations from deep networks via gradient-based localization. In *Proceedings of the IEEE International Conference on Computer Vision (ICCV)*, pp. 618-626.
+All ingested leaves undergo standard ImageNet transfer learning normalization:
+$$\mu = [0.485, 0.456, 0.406], \quad \sigma = [0.229, 0.224, 0.225]$$
+
+1. **Format Handling**: Converted to 3-channel RGB (alpha channel discarded if PNG).
+2. **Bilinear Resizing**: Resampled to $224 \times 224$ pixels.
+3. **Tensor Conversion**: Normalized from $[0, 255]$ integer space to $[0.0, 1.0]$ float tensor.
+4. **Channel Normalization**: Scaled via standard deviation and shifted via channel mean.
+
+---
+
+## 4. Explainable AI: ViT Grad-CAM
+
+To satisfy transparency and clinical validation requirements, the inference service couples predictions with **Gradient-weighted Class Activation Mapping (Grad-CAM)**:
+1. Gradients and forward activations are captured from the final LayerNorm block (`encoder.layers[-1].ln_1`).
+2. The `[CLS]` token is separated from the 196 spatial patch tokens ($14 \times 14$).
+3. Global average pooled gradients weight the spatial token activations:
+   $$L_{\text{Grad-CAM}}^c = \text{ReLU}\left(\sum_{k} \alpha_k^c A_k\right)$$
+4. The resulting $14 \times 14$ activation map is normalized and upscaled to full image dimensions using bilinear interpolation.
+5. A JET heatmap is alpha-blended ($\alpha = 0.45$) over the original leaf to visually delineate the pathogen lesions.
+
+---
+
+## 5. Model Weights & Deployment
+
+- **Weights File**: `backend/saved_models/best_plant_disease_vit.pth` (343 MB)
+- **Online Release**: Available for download under the repository's GitHub Releases tab (`v1.0.0`).
+- **Classes Mapping**: [`backend/classes.json`](../backend/classes.json)
+- **Agronomic Translations**: [`backend/translations.json`](../backend/translations.json) (EN, HI, KN, TE)
